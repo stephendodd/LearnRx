@@ -1,4 +1,5 @@
 import _ from 'lodash'
+import 'babel-polyfill'
 import trackableConsole from './trackable-console'
 import exercise from './your-code-here'
 import postCheck from './post-check'
