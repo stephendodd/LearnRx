@@ -7,3 +7,7 @@ Array.prototype.contactAll = function() {
 Array.prototype.contactMap = function(projectionFunctionReturnsArray) {
     return _.flatMap(this, projectionFunctionReturnsArray);
 };
+
+Array.prototype.reduce = function(accumulator, initValue) {
+    return [_.reduce(this, accumulator, initValue)];
+};
