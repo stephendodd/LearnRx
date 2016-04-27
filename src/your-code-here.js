@@ -6,6 +6,9 @@ function exercise (superHeroes, console) {
     /*
         Add your code here and try to use Array.prototype.forEach
      */
+     superHeroes.forEach(hero => {
+       console.log(hero);
+     });
 }
 
 export default exercise;
