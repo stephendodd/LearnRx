@@ -7,6 +7,15 @@ function exercise (superHeroes) {
     /*
      Add your code here
      */
+
+     superHeroes.forEach(heroType => {
+       heroType.heroes.forEach(hero => {
+         return allHeroNames.push(hero.name);
+       });
+     });
+
+     console.log(allHeroNames);
+
     return allHeroNames;
 }
 
