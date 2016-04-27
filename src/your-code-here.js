@@ -10,6 +10,14 @@ function exercise (superHeroes) {
     Push the results into heroWithIdentity. Examples: heroWithIdentity.push(newHero);
      */
 
+     superHeroes.forEach(hero =>{
+       heroWithIdentity.push({
+         name: hero.name,
+         identity: hero.identity
+       });
+     });
+     console.log(heroWithIdentity);
+
     return heroWithIdentity;
 }
 
