@@ -9,6 +9,15 @@ function exercise (superHeroes) {
      Add your code here, chain the filter and map function
      */
 
+     martialArtsMaster = superHeroes.filter(hero => {
+       return hero.superPower.includes("Martial arts");
+     }).map(hero => {
+       return {
+        "name": hero.name,
+        "identity": hero.identity
+        }
+      });
+    console.log(martialArtsMaster);
     return martialArtsMaster;
 }
 
