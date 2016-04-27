@@ -11,6 +11,31 @@ function exercise (superHeroes) {
      Array.prototype.includes can return true if the array contains the item.
      Example: ['a','b','c'].includes('b') is true
      */
+     /*flyableHero = superHeroes.map(hero => {
+
+           if (hero.superPower.includes("Flight")) {
+             return {
+               id: hero.id,
+               name: hero.name,
+               identity: hero.identity,
+               superPower: hero.superPower
+             }
+           } else {
+              continue;
+           }
+         });
+         console.log("actual" + flyableHero);*/
+
+         superHeroes.forEach(hero => {
+           if (hero.superPower.includes("Flight")) {
+             flyableHero.push({
+               id: hero.id,
+               name: hero.name,
+               identity: hero.identity,
+               superPower: hero.superPower
+             })
+           }
+         })
 
     return flyableHero;
 }
