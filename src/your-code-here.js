@@ -15,6 +15,12 @@ function exercise () {
          Add your code here, and add all the items in each subArray to the results array.
          */
 
+         sourceArray.forEach(array => {
+           array.forEach(arrayElement => {
+             results.push(arrayElement);
+           });
+         });
+         console.log(results);
         return results;
     }
 }
