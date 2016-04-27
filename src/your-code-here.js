@@ -28,12 +28,7 @@ function exercise (superHeroes) {
 
          superHeroes.forEach(hero => {
            if (hero.superPower.includes("Flight")) {
-             flyableHero.push({
-               id: hero.id,
-               name: hero.name,
-               identity: hero.identity,
-               superPower: hero.superPower
-             })
+             flyableHero.push(hero);
            }
          })
 
