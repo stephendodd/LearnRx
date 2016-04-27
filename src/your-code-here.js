@@ -11,6 +11,15 @@ function exercise (superHeroes) {
      and assign the result to heroWithIdentity;
      */
 
+     heroWithIdentity = superHeroes.map(hero => {
+       return {
+         name: hero.name,
+         identity: hero.identity
+       }
+     });
+
+     console.log(heroWithIdentity);
+
     return heroWithIdentity;
 }
 
