@@ -13,6 +13,11 @@ function exercise () {
         /*
          Add your code here
          */
+         sourceArray.forEach(arrayElement => {
+           arrayElement = projectionFunction(arrayElement);
+           results.push(arrayElement);
+         });
+
 
         return results;
     }
