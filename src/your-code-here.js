@@ -14,6 +14,13 @@ function exercise () {
         /*
          Add your code here
          */
+
+         this.forEach(item => {
+           if (predicate(item)) {
+              results.push(item);
+           }
+         });
+
         return results;
     }
 }
