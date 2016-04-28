@@ -7,19 +7,15 @@ function exercise (superHeroes) {
      Add your code here
      */
 
-     allHeroNames = superHeroes.forEach(heroWorld => {
-       //console.log(heroWorld);
+     superHeroes.forEach(heroWorld => {
        heroWorld.heroes.forEach(hero => {
          return allHeroNames.push(hero);
-         //console.log(hero);
        });
-     }).map( hero => {
-       return hero.name;
      });
 
-     /*allHeroNames = allHeroNames.map(hero => {
+     allHeroNames = allHeroNames.map(hero => {
        return hero.name;
-     });*/
+     });
 
     return allHeroNames;
 }
