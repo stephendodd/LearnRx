@@ -7,17 +7,24 @@ function exercise (superHeroes) {
      Add your code here
      */
 
-     superHeroes.forEach(heroWorld => {
-       heroWorld.heroes.forEach(hero => {
-         return allHeroNames.push(hero);
-       });
-     });
-
-     allHeroNames = allHeroNames.map(hero => {
-       return hero.name;
-     });
+    allHeroNames = superHeroes.map(world => {
+      return world.heroes
+    }).concatAll().map(hero => {
+      return hero.name;
+    })
 
     return allHeroNames;
+
+    //Old method of doing this
+    //  superHeroes.forEach(heroWorld => {
+    //    heroWorld.heroes.forEach(hero => {
+    //      return allHeroNames.push(hero);
+    //    });
+    //  });
+    //  allHeroNames = allHeroNames.map(hero => {
+    //    return hero.name;
+    //  });
+
 }
 
 export default exercise;
