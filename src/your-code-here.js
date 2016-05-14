@@ -7,16 +7,15 @@
     This contactMap function is also known as flatMap
  */
 function exercise () {
-    Array.prototype.contactMap = function(projectionFunctionReturnArray) {
-        let sourceArray = this,
-            result = [];
+  Array.prototype.contactMap = function(projectionFunctionReturnArray) {
+    let sourceArray = this,
+      result = [];
+      result = sourceArray.map(arrayElement => {
+        return [arrayElement, arrayElement]
+      })
 
-        /*
-         Add your code here
-         */
-
-        return result;
-    }
+    return result;
+  }
 }
 
 export default exercise;
