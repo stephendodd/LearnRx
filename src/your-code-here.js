@@ -10,6 +10,21 @@ function exercise (superHeroes) {
      Try to give me heroes like this:
      [{name:'Superman', identity: 'Clerk Kent', avatar: 'http://super-heroes.com/superman/medium.jpg'}, ...]
      */
+
+     heroesWithAvatar = superHeroes.contactMap(world => {
+       return world.heroes;
+     }).contactMap(hero => {
+       return hero.avatars.filter(avatar => {
+         return avatar.w == 100
+       }).contactMap(avatar => {
+         return {
+           "name":hero.name,
+           "identity":hero.identity,
+           "avatar":avatar.url
+         }
+       })
+     })
+
     return heroesWithAvatar;
 }
 
